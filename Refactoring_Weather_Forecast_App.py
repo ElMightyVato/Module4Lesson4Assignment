@@ -12,7 +12,6 @@ class WeatherDataFetcher:
         self.weather_data = weather_data
 
     def fetch(self, city):
-        # Debugging print statement to check the input city and weather data
         print(f"Fetching weather data for {city}...")
         return self.weather_data.get(city.title(), {})  # Ensure the city name is properly capitalized
 
